@@ -1,0 +1,455 @@
+:root { 
+    --size: 1rem;
+    --background: #fff;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+@media (min-width: 1024px) {
+    #siotp-login-wrap {
+        background: linear-gradient(to left, var(--login-primary), var(--login-primary) 50%, var(--login-primary) 61.66666%, var(--login-secondary) 61.66666%);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-align-items: center;  
+    }
+    #login {
+        width: 380px;
+        padding: 0;
+    }
+    .login h1 {
+        display: none;
+    }
+}
+@media (min-height: 769px) {
+    #login {
+        border: 1px solid #d4d4d4;
+        padding: 25px;
+    }
+}
+#siotp-login-wrapper {
+    width: 70%;
+    display: grid;
+    height: 80%;
+    background: linear-gradient(to left, var(--login-primary), var(--login-primary) 50%, var(--login-primary) 66.66666%, var(--login-secondary) 66.66666%);
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1);
+    grid-template-columns: 33.33333% 66.66666%;
+}
+.siotp-login-icon {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.siotp-login-icon h3 {
+    font-size: 24px;
+    color: #fff;
+}
+#siotp-login-wrap #login form {
+    border: none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0;
+    margin-top: 0;
+    background-color: var(--login-primary);
+}
+#siotp-login-wrap #login p, #siotp-login-wrap #login div {
+    position: relative;
+}
+#siotp-login-wrap #login p > label, #siotp-login-wrap #login div > label {
+    left: 15px;
+    top: 20px;
+    color: #3c434a;
+    position: absolute;
+    pointer-events: none;
+    margin-bottom: 0;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    z-index: 10;
+}
+
+#siotp-login-wrap #login p input[type="text"], #siotp-login-wrap #login div input[type="password"], #siotp-login-wrap #login div input[type="text"] {
+    border: none;
+    border-bottom: 1px solid var(--login-secondary);
+    background-color: transparent;
+    border-radius: 0;
+    padding: 10px 15px;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    -ms-transition: box-shadow 0.2s ease-in;
+    -o-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+    margin: 0;
+}
+#siotp-login-wrap #login div input[type="password"] {
+    padding-right: 2.5rem;
+}
+#siotp-login-wrap #login p.active label, #siotp-login-wrap #login div.active label {
+    font-size: 12px;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px);    
+    color: var(--login-secondary);
+}
+#siotp-login-wrap #login p input:focus, 
+#siotp-login-wrap #login div input:focus, 
+#siotp-login-wrap #login p.active input, 
+#siotp-login-wrap #login div.active input {
+    box-shadow: none;
+    outline: none;
+}
+
+#siotp-login-wrap #login p > label + label {
+    display: none;
+}
+#siotp-login-wrap #login .forgetmenot {
+    font-size: var(--size);
+}
+
+#siotp-login-wrap #login .forgetmenot *,
+#siotp-login-wrap #login .forgetmenot *::after,
+#siotp-login-wrap #login .forgetmenot *::before {
+    box-sizing: border-box;
+}
+
+#siotp-login-wrap #login .forgetmenot input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+}
+
+#siotp-login-wrap #login .forgetmenot .checkbox__label {
+    width: var(--size);
+}
+
+#siotp-login-wrap #login .forgetmenot .checkbox__label:before {
+    content: ' ';
+    display: block;
+    height: var(--size);
+    width: var(--size);
+    position: absolute;
+    top: calc(var(--size) * 0.125);
+    left: 0;
+    background: var(--login-primary);  
+}
+
+#siotp-login-wrap #login .forgetmenot .checkbox__label:after {
+    content: ' ';
+    display: block;
+    height: var(--size);
+    width: var(--size);
+    border: calc(var(--size) * .14) solid #50575e;
+    transition: 200ms;
+    position: absolute;
+    top: calc(var(--size) * 0.125);
+    left: 0;
+    background: var(--login-primary);  
+}
+
+#siotp-login-wrap #login .forgetmenot .checkbox__label:after {
+    transition: 100ms ease-in-out;
+}
+
+#siotp-login-wrap #login .forgetmenot .checkbox__input:checked ~ .checkbox__label:after {
+    border-top-style: none; 
+    border-right-style: none;
+    -ms-transform: rotate(-45deg); /* IE9 */
+    transform: rotate(-45deg);
+    height: calc(var(--size) * .5);
+    border-color: var(--login-secondary);
+}
+
+#siotp-login-wrap #login .forgetmenot .siotp-checkbox {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    /* Mobile Safari: */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);  
+    top: 0; 
+    padding-left: 25px;
+    pointer-events: auto;
+}
+
+#siotp-login-wrap #login .forgetmenot .checkbox__label:after:hover,
+#siotp-login-wrap #login .forgetmenot .checkbox__label:after:active {
+    border-color: var(--login-secondary); 
+}
+
+#siotp-login-wrap #login .forgetmenot .checkbox__label {
+    margin-right: calc(var(--size) * 0.45);
+}
+#siotp-login-wrap #login p.forgetmenot > label {
+    left: 0;
+}
+#siotp-login-wrap #login .button.wp-hide-pw {
+    top: 5px;
+}
+.login .button.wp-hide-pw .dashicons:before {
+    color: var(--login-secondary);
+}
+.login .button.wp-hide-pw:focus{
+    box-shadow: none;
+    outline: none;
+    border-color: transparent !important;
+}
+.wp-core-ui #siotp-login-wrap #login .button.button-primary {
+    float: none;
+    background-color: var(--login-button-color);
+    border-color: var(--login-button-color); 
+    color: var(--login-button-text-color);
+    font-size: calc(var(--size) * 1.2);
+    width: 100%;
+}
+.wp-core-ui #siotp-login-wrap #login .button.button-primary:hover {
+    text-shadow: 0px 0px 5px #4a4a4a;
+}
+.login #siotp-login-wrap #login div#login_error, .login #siotp-login-wrap #login div.message, .login #siotp-login-wrap #login div.success {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 400px;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    z-index: 10;
+    font-size: 15px;
+    border: 1px solid transparent;
+    line-height: 23px;
+}
+.login #siotp-login-wrap #login div#login_error {
+    background: #f8d7da;
+    color: #842029;
+    border-color: #f5c2c7;
+}
+.login #siotp-login-wrap #login div.success {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+.login #siotp-login-wrap #login div.message {
+    color: #055160;
+    background-color: #cff4fc;
+    border-color: #b6effb;
+}
+.signin_with_otp_text_wrap {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signin_with_otp_text_wrap .line {
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #d4d4d4;
+}
+.signin_with_otp_text_wrap .line::before{
+    content: 'OR';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--login-primary);
+    color: #8b8b8b;
+    padding: 0 15px;
+}
+.signin_with_otp_text_wrap a {
+    text-decoration: none;
+    margin: 0 5px;
+    color: var(--otp-button-text-color);
+    background-color: var(--otp-button-color);
+    display: flex;
+    width: 100%;
+    border-radius: 3px;
+    min-height: 32px;
+    line-height: 2.30769231;
+    font-size: calc(var(--size) * 1.2);
+    align-items: center;
+    justify-content: center;
+}
+.signin_with_otp_text_wrap a i {
+    content: "";
+    background: url('../images/siotp.png');
+    width: 40px;
+    height: 40px;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.signin_with_otp_text_wrap a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+}
+.signin_with_otp_text_wrap a:hover {
+    color: #135e96;
+    text-shadow: 0px 0px 5px #4a4a4a;
+    color: #fff;
+}
+.signin_with_otp_text_wrap p {
+    margin-bottom: 10px;
+}
+#login form p {
+    position: relative;
+}
+#user_login-error {
+    font-size: 13px;
+    color: #f00;
+    margin-top: -30px;
+}
+.siotp_settings table.form-table .colorpickpreview {
+    padding: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    margin-right: 5px;
+    border: 1px solid #8c8f94;
+}
+.siotp_settings span.description {
+    display: block;
+}
+.si_processing:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: url(../images/loader.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    content: "";
+    height: 100%;
+    width: 100%;
+}
+#signin_with_otp_captcha_wrap {
+    margin-left: 0;
+    font-weight: 400;
+    overflow: hidden;
+    background: #fff;
+    display: none;
+}
+#signin_with_otp_captcha_wrap form, #signin_with_otp_wrap form {
+    margin-top: 0;
+}
+#signin_with_otp_captcha_wrap h3, #signin_with_otp_wrap h3 {
+    text-align: left;
+    margin-bottom: 35px;
+    margin-top: 0;
+    font-size: 20px;
+    color: var(--login-secondary);
+    font-weight: 500;
+}
+#signin_with_otp_wrap h3 {
+    margin-bottom: 0;
+}
+#signin_with_otp_wrap p.countdown {
+    text-align: center;
+}
+#signin_with_otp_wrap p.countdown span span, #signin_with_otp_wrap p.countdown span small {
+    background: #144955;
+    padding: 6px 10px;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 24px;
+    margin: 0;
+    font-weight: 500;
+}
+#signin_with_otp_wrap p.countdown span small {
+    color: #144955;
+    background: transparent;
+    margin: 0;
+}
+#signin_with_otp_back_button {
+    position: absolute;
+    right: 0;
+    border: 1px solid var(--login-secondary);
+    color: var(--login-secondary);
+    padding: 5px 10px;
+    line-height: 17px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#signin_with_otp_back_button::before {
+    content: " ";
+    border-left: 1px solid var(--login-secondary);
+    border-bottom: 1px solid var(--login-secondary);
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+}
+#signin_with_otp_wrap #signin_with_otp_back_button {
+    margin: 0;
+}
+table.signin-with-otps tr td.column-status span,
+table.signin-with-otps tr td.column-user_status span {
+    background: #f1f1f1;
+    padding: 3px 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+table.signin-with-otps tr td.column-status span.green,
+table.signin-with-otps tr td.column-user_status span.green {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+table.signin-with-otps tr td.column-status span.red,
+table.signin-with-otps tr td.column-user_status span.red {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.login #backtoblog, .login #nav {
+    padding: 0;
+    margin: 25px 0 0 0;
+}
+.login #backtoblog {
+    text-align: right;
+}
+.signin_with_otp_nav_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+.login #backtoblog a:hover, .login #nav a:hover {
+    color: var(--login-secondary);
+}
+#signin_with_otp_captcha_wrap form .captcha_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+@media (max-width: 768px) {
+    #siotp-login-wrapper {
+        width: 100%;
+        height: 100vh;
+        background: var(--login-primary);
+        display: flex;
+    }
+    .siotp-login-icon {
+        display: none;
+    }
+}

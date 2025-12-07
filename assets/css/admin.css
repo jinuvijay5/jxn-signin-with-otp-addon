@@ -1,0 +1,486 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?ta5a4');
+    src:  url('fonts/icomoon.eot?ta5a4#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?ta5a4') format('truetype'),
+        url('../fonts/icomoon.woff?ta5a4') format('woff'),
+        url('../fonts/icomoon.svg?ta5a4#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+.form-table th {
+    min-width: 30%;
+}
+.siotp_settings, .toplevel_page_siotp-dashboard .wrap {
+    position: relative;
+    margin: 0;
+}
+.siotp_settings.wrap form {
+    display: flex;
+    width: 100%;
+}
+.siotp_settings .left-column {
+    width: 20%;
+    background-color: #F0F0F1;
+}
+.siotp_settings .right-column {
+    width: 80%;
+    background-color: #fff;
+    padding: 3rem;
+}
+.siotp_settings .right-column h1 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 34px;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+    color: #0d3e3d;
+}
+.content-wrapper {
+    margin-top: 60px;
+}
+.content-wrapper h2 {
+    font-size: 20px;
+    color: #1b7f7d;
+}
+.content-wrapper h2 + div {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.logo-frame {
+    width: 100%;
+    padding: 30px 0;
+}
+.logo-frame img {
+    width: 85%;
+    object-fit: contain;
+    padding: 0 20px;
+    max-width: 100%;
+}
+.siotp_settings .siotp-nav-tab-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.siotp_settings .siotp-nav-tab-wrapper li {
+    width: 100%;
+    margin-bottom: 0;
+}
+.siotp_settings .siotp-nav-tab-wrapper li a {
+    padding: 30px 15px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: normal;
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    align-items: center;
+}
+.siotp_settings .siotp-nav-tab-wrapper li a::after, .siotp_settings .right-column h1::before {
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 30px;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.siotp_settings .right-column h1::before {
+    background: #1b7f7d50;
+    padding: 12px;
+    border-radius: 5px;
+    color: #0d3e3d;
+    margin-right: 20px;
+}
+.siotp_settings .siotp-nav-tab-wrapper li.label-settings a::after {
+    content: "\e01e";
+}
+.siotp_settings .siotp-nav-tab-wrapper li.emails-settings a::after {
+    content: "\e028";
+}
+.siotp_settings .siotp-nav-tab-wrapper li.recaptcha-settings a::after {
+    content: "\e05a";
+}
+.siotp_settings .siotp-nav-tab-wrapper li.general-settings a::after, .siotp_settings .right-column h1.general-settings::before {
+    content: "\e902";
+}
+.siotp_settings .siotp-nav-tab-wrapper li.support a::after {
+    content: "\e901";
+}
+.siotp_settings .siotp-nav-tab-wrapper li.otp-settings a::after {
+    content: "\e903";
+}
+.siotp_settings .siotp-nav-tab-wrapper li.dashboard a::after {
+    content: "\e904";
+}
+.siotp_settings .siotp-nav-tab-wrapper a:hover, .siotp_settings .siotp-nav-tab-wrapper a.siotp-nav-active {
+    background-color: #fff;
+    color: #1b7f7d;
+}
+.colorpickpreview {
+    width: 47px;
+    height: 47px;
+    border-radius: 4px;
+    margin-top: -4px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+}
+input[type="date"], input[type="datetime-local"], input[type="datetime"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+    min-height: 38px;
+    font-size: 16px;
+    border-radius: 2px;
+    background: #f9f9f9;
+    margin-right: 10px;
+}
+.wp-core-ui .siotp_settings .button, .wp-core-ui .siotp_settings .button-primary, .wp-core-ui .siotp_settings .button-secondary {
+    padding: 5px 10px;
+    letter-spacing: -0.08px;
+    font-size: 0.8rem;
+    line-height: 1.8181818182;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #fff !important;
+    white-space: nowrap;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: all 200ms ease-out;
+    -webkit-transition: all 200ms ease-out;
+    background: #35a576;
+    border: none;
+}
+.siotp_settings .form-table th label {
+    font-size: 16px;
+    font-weight: 600;
+}
+.woocommerce-help-tip {
+    color: #666;
+    display: inline-block;
+    font-size: 1.1em;
+    font-style: normal;
+    height: 16px;
+    line-height: 16px;
+    position: relative;
+    vertical-align: middle;
+    width: 16px;
+}
+.woocommerce-help-tip::after {
+    font-family: Dashicons;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    text-indent: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    content: "\f223";
+    cursor: help;
+    font-size: 18px;
+    color: #666;
+}
+.siotp_settings table.form-table th label {
+    position: relative;
+    display: block;
+}
+.siotp_settings table.form-table th label .woocommerce-help-tip {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin: -10px -10px 0 0;
+}
+.widefat td.column-status span, .widefat td.column-user_status span {
+    padding: 5px 8px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.widefat td.column-status span.green, .widefat td.column-user_status span.green {
+    background-color: #b4ffe0;    
+}
+.widefat td.column-status span.red, .widefat td.column-user_status span.red {
+    background-color: #f8d7da;    
+}
+.jxn-help-tip {
+    color: #666;
+    display: inline-block;
+    font-size: 1.1em;
+    font-style: normal;
+    height: 16px;
+    line-height: 16px;
+    position: absolute;
+    vertical-align: middle;
+    width: 16px;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+.jxn-help-tip::after {
+    font-family: Dashicons;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    text-indent: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    content: "\f223";
+    cursor: help;
+    font-size: 18px;
+    color: #666;
+}
+.form-table th {
+    position: relative;
+}
+#tiptip_holder {
+    display: none;
+    z-index: 8675309;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    left: 0
+}
+#tiptip_holder.tip_top {
+    padding-bottom: 5px
+}
+#tiptip_holder.tip_top #tiptip_arrow_inner {
+    margin-top: -7px;
+    margin-left: -6px;
+    border-top-color: #333
+}
+#tiptip_holder.tip_bottom {
+    padding-top: 5px
+}
+#tiptip_holder.tip_bottom #tiptip_arrow_inner {
+    margin-top: -5px;
+    margin-left: -6px;
+    border-bottom-color: #333
+}
+#tiptip_holder.tip_right {
+    padding-left: 5px
+}
+#tiptip_holder.tip_right #tiptip_arrow_inner {
+    margin-top: -6px;
+    margin-left: -5px;
+    border-right-color: #333
+}
+#tiptip_holder.tip_left {
+    padding-right: 5px
+}
+#tiptip_holder.tip_left #tiptip_arrow_inner {
+    margin-top: -6px;
+    margin-left: -7px;
+    border-left-color: #333
+}
+#tiptip_content,
+.chart-tooltip,
+.wc_error_tip {
+    color: #fff;
+    font-size: .8em;
+    max-width: 150px;
+    background: #333;
+    text-align: center;
+    border-radius: 3px;
+    padding: .618em 1em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2)
+}
+#tiptip_content code,
+.chart-tooltip code,
+.wc_error_tip code {
+    padding: 1px;
+    background: #888
+}
+#tiptip_arrow,
+#tiptip_arrow_inner {
+    position: absolute;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 6px;
+    height: 0;
+    width: 0
+}
+.form-table td fieldset ul {
+    margin: 0;
+}
+#siotp-save-settings-btn {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    padding: 8px 24px;
+    text-align: center;
+    background: #1b7f7d;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -0.08px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #fff !important;
+    white-space: nowrap;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: all 200ms ease-out;
+    -webkit-transition: all 200ms ease-out;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    border: none;
+}
+.content-wrapper input[type="email"], 
+.content-wrapper input[type="number"], 
+.content-wrapper input[type="password"], 
+.content-wrapper input[type="search"], 
+.content-wrapper input[type="tel"], 
+.content-wrapper input[type="text"], 
+.content-wrapper input[type="url"],
+.content-wrapper textarea {
+    padding: 6px 20px;
+    width: 100%;
+    color: #121116;
+    background: #fff;
+    border: 2px solid #c2cad4;
+    border-radius: 3px;
+    transition: border 200ms ease-out;
+    -webkit-transition: border 200ms ease-out;
+}
+.input-wrapper {
+    display: flex;
+}
+.siotp_settings .right-column p.submit {
+    text-align: right;
+    max-width: 100%;
+    margin: 50px 0 0 0;
+    padding: 30px 0 0 0;
+    border-top: 1px solid #e0e0e0;
+}
+.content-wrapper .custom-checkbox {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    font-weight: 600;
+}
+.content-wrapper .custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.content-wrapper .custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+.content-wrapper .custom-checkbox input:checked ~ .checkmark {
+    background-color: #1b7f7d;
+    border-color: #1b7f7d;
+}
+.content-wrapper .custom-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.content-wrapper .custom-checkbox input:checked ~ .checkmark::after {
+    display: block;
+}
+.content-wrapper .custom-checkbox .checkmark::after {
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.siotp_settings .right-column .notice {
+    border: none;
+    background: #cce5ff;
+    color: #004085;
+    margin-top: 30px;
+    font-weight: 500;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 8px 8px 8px 20px;
+}
+.siotp_settings .right-column .notice-success {
+    background: #b4ffe0;
+    color: #065f46;
+}
+.siotp_settings .right-column .notice-warning {
+    background: #fff3cd;
+    color: #856404;
+}
+.siotp_settings .right-column .notice-error {
+    background: #f8d7da;
+    color: #721c24;
+}
+.siotp_settings .right-column .notice p {
+    font-size: 16px;
+}
+.siotp_settings .right-column .notice .notice-dismiss {
+    position: relative;
+}
+.content-wrapper .form-table {
+    margin: 2rem 0 5rem 0;
+}
+.siotp-dashboard table {
+    border: 2px solid #c2cad4;
+    color: #121116;
+    border-radius: 3px;
+    transition: border 200ms ease-out;
+    -webkit-transition: border 200ms ease-out;
+}
+.siotp-dashboard .tablenav .bulkactions select {
+    padding: 1px 20px;
+    margin-bottom: 10px;
+    color: #121116;
+    border: 2px solid #c2cad4;
+    border-radius: 3px;
+    transition: border 200ms ease-out;
+    -webkit-transition: border 200ms ease-out;
+    font-size: 15px;
+}
+
+.siotp-dashboard table.widefat thead td, .siotp_ssiotp-dashboardettings table.widefat thead th {
+    border-bottom: 2px solid #c2cad4;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.siotp-dashboard table.widefat tbody td, .siotp-dashboard table.widefat tbody th {
+    font-size: 15px;
+    font-weight: 500;
+}
